@@ -37,8 +37,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginLeft="55dp"
         android:layout_marginRight="55dp"
-        android:text="Article text here!" 
-	    android:onClick="onFavoriteCheckboxClicked"/>
+        android:text="Article text here!"
+        android:autoLink="web"/>
     
     <TextView
         android:id="@+id/textNoMap"

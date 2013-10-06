@@ -19,6 +19,7 @@ import android.app.ActionBar.Tab;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -104,7 +105,7 @@ public class ArticleView extends Activity {
 		final ArticleData article = dm.getArticle(articleName);
 
 		articleText.setText(article.getContent());
-		
+		articleText.setMovementMethod(LinkMovementMethod.getInstance());
 		
 		CheckBox favoritesBox = (CheckBox) findViewById(R.id.checkBox1);
 		favoritesBox.setChecked(article.isFavorited());
